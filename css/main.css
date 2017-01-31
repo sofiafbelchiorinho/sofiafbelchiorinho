@@ -156,6 +156,7 @@ body {margin: 0;font-family: 'Lato', sans-serif;overflow-x: hidden;color: #161a2
 }
 
 .hero a#email,
+.hero a#medium,
 .hero a#linkedin{
   float: right;
   margin-left: 10px;
@@ -164,7 +165,14 @@ body {margin: 0;font-family: 'Lato', sans-serif;overflow-x: hidden;color: #161a2
 
 .hero a#email:after{
   font-family: FontAwesome;
-  content: "\f003";
+  content:  "\f003";
+  color: #fff;
+  font-size: 18px;
+}
+
+.hero a#medium:after{
+  font-family: FontAwesome;
+  content: "\f23a";
   color: #fff;
   font-size: 18px;
 }
@@ -369,6 +377,11 @@ section > h2:after{
   transform: translate(-50%, -50%);
 }
 
+ footer{
+  height: 80px;
+  background: #161a21;
+}
+
 
 @media (min-width: 767px) {
     .mobile-menu{
@@ -405,6 +418,7 @@ section > h2:after{
     }
 
     .hero a#email,
+    .hero a#medium,
     .hero a#linkedin{
        display: block;
     }    
@@ -425,6 +439,10 @@ section > h2:after{
     .card{
         width: 240px;
         margin-bottom: 0;
+    }
+
+    footer{
+      height: 50px;
     }
 
 }
