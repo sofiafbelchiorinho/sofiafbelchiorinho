@@ -37,8 +37,17 @@
 	</div>
     <div class="main-content">
         <section id="about">
-            <h2>about</h2>           
-                 
+          <h2>about</h2>  
+          <div class="container">
+            <div class="me">
+             <img id="me" src="./img/me_bw.jpg" />
+             <div class="about-me">
+                <p>It has no natural satellite. It is named after the Roman goddess of love and beauty. It is the second-brightest natural object in the night sky after the Moon, reaching an apparent magnitude of −4.6, bright enough to cast shadows</p>               
+                <p class="more">It has no natural satellite. It is named after the Roman goddess of love and beauty. It is the second-brightest natural object in the night sky after the Moon, reaching an apparent magnitude of −4.6, bright enough to cast shadows</p>
+                 <a href="#" class="read-more">read more</a>
+             </div>
+            </div>
+          </div> 
         </section>
         <section id="skills">
            <h2>skills</h2>
@@ -129,6 +138,12 @@
             scrollTop: $($(this)[0].hash).offset().top - 75
           }, 1200, 'swing');
          $(this).addClass('active');
+       });
+
+       $('.about-me').on('click', 'a.read-more', function(e){
+          e.preventDefault();
+          $('.me .about-me p.more').css('opacity', '1');
+          $('.me .about-me p.more').css('height', '165px');
        });
     </script>
 </body>

@@ -22,7 +22,6 @@ body {margin: 0;font-family: 'Lato', sans-serif;overflow-x: hidden;color: #161a2
     height: 100%;
 }
 
-
 .nav {
     position: absolute;
     display: none;
@@ -75,7 +74,6 @@ body {margin: 0;font-family: 'Lato', sans-serif;overflow-x: hidden;color: #161a2
     margin: 0 auto;
     margin-bottom: 30px;
 }
-
 
 .card .card-body{
     padding: 0 20px;
@@ -196,7 +194,6 @@ body {margin: 0;font-family: 'Lato', sans-serif;overflow-x: hidden;color: #161a2
   border: none;
 }
 
-
 .main-content{
     width: 100%;
 }
@@ -205,13 +202,42 @@ body {margin: 0;font-family: 'Lato', sans-serif;overflow-x: hidden;color: #161a2
     display: block;
 }
 
-
-
 .discover:hover{
     color: initial;
     background-color: #fff;
 }
 
+.me{
+  padding:  0 20px;
+  text-align: center; 
+}
+
+.me .about-me{
+  text-align: center;
+  padding:  20px 0;
+  line-height: 1.7em;
+}
+
+.me .about-me p.more{
+  height: 0;
+  opacity: 0;
+  transition: 400ms all ease;
+}
+
+.me .read-more{
+  font-size:  14px;
+  color:  initial;
+  text-decoration: none;
+  text-transform: uppercase;  
+  padding: 5px 20px;
+  border: 2px solid #161a21;
+}
+
+.me img#me{
+    max-width: 110px;
+    border-radius: 50%;
+    align-items: stretch;
+}
 
 .card:hover .overlay{
     position: absolute;
@@ -250,32 +276,6 @@ section > h2:after{
    bottom: 0;
    left: 50%;
    transform: translateX(-50%);
-}
-
-.education {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    align-items: center;
-}
-
-.education > div{
-     -webkit-box-flex: 1;
-     -moz-box-flex: 1;
-     -webkit-flex: 1 1 auto;
-     flex: 1 1 auto;
-     text-align: center;
-     width: 25%;
-}
-
-.education > div img{
-    max-width: 100%;
-
-}
-
-div#edit img {
-    max-width: 160px;
 }
 
 .menu-toggle {
@@ -349,7 +349,6 @@ div#edit img {
 .mobile-menu.open .mobile-nav{
   display: flex;
   flex-direction: column;
-  /* position: absolute; */
   top: 200px;
   right: -45px;
   text-align: right;
@@ -385,6 +384,14 @@ div#edit img {
         width: 750px;
     }
 
+    .me .about-me p.more{
+      height: auto;
+      opacity: 1;
+    }
+
+    .me .read-more{
+        display: none;
+    }
 
     .hero{
         padding: 0;
@@ -440,10 +447,6 @@ div#edit img {
     .container,
     .nav.fixed{
         width: 1180px;
-    }
-
-    .main-content > section{
-        /* margin-bottom: 35px; */
     }
 
     .card {
