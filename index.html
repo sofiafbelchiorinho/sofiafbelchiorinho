@@ -137,12 +137,18 @@
        });
 
         var num = $('div.nav').offset().top;
-       $('.canvas').on('click', 'a.discover', function(){
+       $('.canvas').on('click', 'a.discover' , function(){
          $(this).siblings().removeClass('active');
          $('html, body').animate({
             scrollTop: $($(this)[0].hash).offset().top - 75
           }, 1200, 'swing');
          $(this).addClass('active');
+       });
+
+       $('.canvas').on('click', '.mobile-nav a' , function(){
+         $('html, body').animate({
+            scrollTop: $($(this)[0].hash).offset().top 
+          }, 1200, 'swing');
        });
 
        $('.about-me').on('click', 'a.read-more', function(e){
