@@ -142,7 +142,7 @@ body {margin: 0;font-family: 'Lato', sans-serif;overflow-x: hidden;color: #161a2
 }
 
 .hero h1{
-    font-size: 3.5em;
+    font-size: 3em;
     margin: 25px 0;
     color: #fff;
     font-weight: 400;
@@ -376,14 +376,16 @@ div#edit img {
         display: none;
     }
 
-    .nav{
+    .nav{ 
         display: flex;
+        justify-content: flex-start;
+    }
+    
+    .nav.fixed{
+        width: 750px;
     }
 
-    .hero a#email,
-    .hero a#linkedin{
-       display: block;
-    } 
+
     .hero{
         padding: 0;
         padding-left: 20px;
@@ -391,20 +393,21 @@ div#edit img {
         text-align: left;
     }
 
-    .nav{
-        justify-content: flex-start;
+    .hero h1{
+       font-size: 3.5em;
     }
+
+    .hero a#email,
+    .hero a#linkedin{
+       display: block;
+    }    
 
     .container{
         width: 750px;
         margin: 0 auto;      
         position: relative;
     }
-
-    .nav.fixed{
-        width: 750px;
-    }
-
+    
     .main-content > section > .container{
         display: flex;
         flex-direction: row;
