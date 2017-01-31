@@ -5,10 +5,21 @@ body {margin: 0;font-family: 'Lato', sans-serif;overflow-x: hidden;color: #161a2
 .canvas {
     position: relative;
     height: 100%;
-    width: 100%;
+    width: 100%; 
+}  
+
+.banner{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
     background-image: url(../img/landscape.jpeg);
     background-size: cover;
-}  
+    transform: translateZ(0);
+    animation: 16s forwards zoom;
+    z-index:  -1;
+}
 
 .canvas-overlay {
     position: absolute;
@@ -380,6 +391,16 @@ section > h2:after{
  footer{
   height: 80px;
   background: #161a21;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1.2) rotate(.02deg)
+    }
+
+    to {
+        transform: scale(1) rotate(.02deg)
+    }
 }
 
 
