@@ -1,0 +1,134 @@
+<html>
+<head>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="canvas">            
+        <div class="canvas-overlay"></div>
+        <div class="mobile-menu">
+            <div id="mouse-point">
+                <div class="menu-toggle"><div></div></div>
+            </div>
+            <div class="mobile-nav">
+                   <a href="#about">about</a>  
+                   <a href="#skills">skills</a>  
+                   <a href="#work">work</a>  
+                   <a href="#contacts">contacts</a>     
+             </div>
+        </div>
+        <div class="container"> 
+                <div class=hero>
+                    <h1>sofia <br><span>belchiorinho</span></h1>
+                    <div>
+                      <a class="discover" href="#skills">web developer and ui/ux enthusiast</a> 
+                      <a id="linkedin" href="https://pt.linkedin.com/in/sofiabelchiorinho" target="_blank"></a> 
+                      <a id="email" href="mailto:sofiafbelchiorinho@gmail.com" target="_top"></a> 
+                    </div>
+                </div>
+                <div class="nav">
+                   <a class="discover" href="#about">about</a>  
+                   <a class="discover" href="#skills">skills</a>  
+                   <a class="discover" href="#work">work</a>  
+                   <a class="discover" href="#contacts">contacts</a>     
+             </div>
+        </div>
+	</div>
+    <div class="main-content">
+        <section id="about">
+            <h2>about</h2>           
+                 
+        </section>
+        <section id="skills">
+           <h2>skills</h2>
+           <div class="container">
+              <div class="card">
+                <div class="card-image one"></div>
+                <div class="card-body">
+                  It has no natural satellite. It is named after the Roman goddess of love and beauty. It is the second-brightest natural object in the night sky after the Moon, reaching an apparent magnitude of −4.6, bright enough to cast shadows
+                </div>
+              </div>   
+              <div class="card">
+                <div class="card-image two"></div>
+                <div class="card-body">
+                  It has the longest rotation period (243 days) of any planet in the Solar System and rotates in the opposite direction to most other planets. 
+                </div>
+              </div> 
+              <div class="card">
+                <div class="card-image three"></div>
+                <div class="card-body">
+                  It has the longest rotation period (243 days) of any planet in the Solar System and rotates in the opposite direction to most other planets.  It is the second-brightest natural object in the night sky after the Moon, reaching an apparent magnitude of −4.6, bright enough to cast shadows
+                </div>
+              </div>      
+            </div>
+              <div class="container">
+              <div class="card">
+                <div class="card-image four"></div>
+                <div class="card-body">
+                  It has the longest rotation period (243 days) of any planet in the Solar System and rotates in the opposite direction to most other planets. 
+                </div>
+              </div>   
+              <div class="card">
+                <div class="card-image five"></div>
+                <div class="card-body">
+                  It has the longest rotation period (243 days) of any planet in the Solar System and rotates in the opposite direction to most other planets. It has no natural satellite. It is named after the Roman goddess of love and beauty. It is the second-brightest natural object in the night sky after the Moon, reaching an apparent magnitude of −4.6, 
+                </div>
+              </div> 
+              <div class="card">
+                <div class="card-image six"></div>
+                <div class="card-body">
+                  It has the longest rotation period (243 days) of any planet in the Solar System and rotates in the opposite direction to most other planets. It has no natural satellite. It is named after the Roman goddess of love and beauty. 
+                </div>
+              </div>      
+            </div>
+           </div>
+       </section> 
+        <section id="work">
+           <h2>work</h2>
+           <div class="container">
+               
+            </div>
+           </div>
+       </section>  
+        <section id="contacts">
+           <h2>contacts</h2>
+           <div class="container">
+               
+            </div>
+           </div>
+       </section>   
+    </div>
+    <div class=""></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+
+        $(window).bind('scroll', function () {
+            if ($(window).scrollTop() > num) {
+               $('div.nav').addClass('fixed');
+               //$(window).unbind('scroll');
+            } else {
+               $('div.nav').removeClass('fixed');
+            }
+        });
+
+       $('.canvas').on('click', 'div.menu-toggle', function(){
+         if(!$(this).hasClass('menu-toggle--active')){
+            $('.mobile-menu').addClass('open');
+            $(this).addClass('menu-toggle--active');
+        }else{
+            $('.mobile-menu').removeClass('open');
+            $(this).removeClass('menu-toggle--active');
+        }
+       });
+
+        var num = $('div.nav').offset().top;
+       $('.canvas').on('click', 'a.discover', function(){
+         $(this).siblings().removeClass('active');
+         $('html, body').animate({
+            scrollTop: $($(this)[0].hash).offset().top - 75
+          }, 1200, 'swing');
+         $(this).addClass('active');
+       });
+    </script>
+</body>
+</html>
