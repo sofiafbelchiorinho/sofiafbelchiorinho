@@ -6,11 +6,12 @@ body {
   margin: 0;
   font-family: 'Lato', sans-serif;
   overflow-x: hidden;
+  font-size: 16px;
   color: #161a21;
 }
 
 h1{
-    font-size: 3em;
+    font-size: 3.1em;
     color: #fff;
     font-weight: 400;
     line-height: 50px;
@@ -18,10 +19,12 @@ h1{
 
 h2{
     text-align: center;
-    font-size: 2.5em;
+    font-size: 2.6em;
     position: relative;
     padding-bottom: 20px;
     font-weight: 300;
+    margin: 0;
+    margin-bottom: 30px;
 }
 
 a,
@@ -134,7 +137,11 @@ footer{
 .card .card-body{
     padding: 0 20px;
     line-height: 20px;
-    font-size: 14px;
+    margin-bottom:  10px;
+}
+
+.card .card-body span{
+    font-weight: 700;
 }
 
 .card-image {
@@ -168,7 +175,7 @@ footer{
     top: 30%;
     left: 0;
     right: 0;
-    padding: 30px;
+    padding: 20px;
     text-align: center;
 }
 
@@ -186,7 +193,7 @@ footer{
 .hero a#medium,
 .hero a#linkedin{
   float: right;
-  margin-left: 10px;
+  margin-left: 15px;
   display: none;
    font-size: 18px;
 }
