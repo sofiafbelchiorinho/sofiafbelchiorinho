@@ -1,12 +1,53 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400');
 
-body {margin: 0;font-family: 'Lato', sans-serif;overflow-x: hidden;color: #161a21;}
+/*global*/
 
-.canvas {
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  overflow-x: hidden;
+  color: #161a21;
+}
+
+h1{
+    font-size: 3em;
+    color: #fff;
+    font-weight: 400;
+    line-height: 60px;
+}
+
+h2{
+    text-align: center;
+    font-size: 2.5em;
     position: relative;
-    height: 100%;
-    width: 100%; 
-}  
+    padding-bottom: 20px;
+    font-weight: 300;
+}
+
+a,
+a:visited{
+  color: #ffF;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus{
+  color: #a1c5e6;
+}
+
+
+section{
+    padding: 30px 0;
+    background-color: #fff;
+}
+
+footer{
+  height: 80px;
+  background: #161a21;
+}
+
+
+/*other*/
 
 .banner{
     position: absolute;
@@ -20,6 +61,12 @@ body {margin: 0;font-family: 'Lato', sans-serif;overflow-x: hidden;color: #161a2
     animation: 16s forwards zoom;
     z-index:  -1;
 }
+
+.canvas {
+    position: relative;
+    height: 100%;
+    width: 100%; 
+}  
 
 .canvas-overlay {
     position: absolute;
@@ -99,35 +146,12 @@ body {margin: 0;font-family: 'Lato', sans-serif;overflow-x: hidden;color: #161a2
     background-image: url(../img/skillset.png);
 }
 
-.card-image.one {
-    background-position-y: 0px;
-    background-position-x: 0;
-}
-
-.card-image.two {
-    background-position-y: -200px;
-    background-position-x: 0px;
-}
-
-.card-image.three {
-    background-position-y: -400px;
-    background-position-x: 0;
-}
-
-.card-image.four {
-    background-position-y: 0px;
-    background-position-x: 100px;
-}
-
-.card-image.five {
-    background-position-y: -100px;
-    background-position-x: 200px;
-}
-
-.card-image.six {
-    background-position-y: -500px;
-    background-position-x: 100px;
-}
+.card-image.one {    background-position-y: 0px;    background-position-x: 0;}
+.card-image.two {    background-position-y: -200px;    background-position-x: 0px;}
+.card-image.three {    background-position-y: -400px;    background-position-x: 0;}
+.card-image.four {    background-position-y: 0px;    background-position-x: 100px;}
+.card-image.five {    background-position-y: -100px;    background-position-x: 200px;}
+.card-image.six {    background-position-y: -500px;    background-position-x: 100px;}
 
 .discover{
     bottom: 100px;
@@ -151,19 +175,13 @@ body {margin: 0;font-family: 'Lato', sans-serif;overflow-x: hidden;color: #161a2
 }
 
 .hero h1{
-    font-size: 3em;
     margin: 25px 0;
-    color: #fff;
-    font-weight: 400;
-    line-height: 60px;
     padding-bottom: 15px;
     border-bottom: 1px solid rgba(204, 204, 204, 0.41);
 }
 
 .hero a{
   position: relative;
-  color: #fff;
-  text-decoration: none;
 }
 
 .hero a#email,
@@ -172,27 +190,22 @@ body {margin: 0;font-family: 'Lato', sans-serif;overflow-x: hidden;color: #161a2
   float: right;
   margin-left: 10px;
   display: none;
+   font-size: 18px;
 }
 
 .hero a#email:after{
   font-family: FontAwesome;
   content:  "\f003";
-  color: #fff;
-  font-size: 18px;
 }
 
 .hero a#medium:after{
   font-family: FontAwesome;
   content: "\f23a";
-  color: #fff;
-  font-size: 18px;
 }
 
 .hero a#linkedin:after{
   font-family: FontAwesome;
   content:  "\f08c";
-  color: #fff;
-  font-size: 18px;
 }
 
 .hero .discover{
@@ -208,9 +221,9 @@ body {margin: 0;font-family: 'Lato', sans-serif;overflow-x: hidden;color: #161a2
 
 .hero .discover.active,
 .hero .discover:hover{
-  color: #fff;
   background: initial;
   border: none;
+  color: #a1c5e6;
 }
 
 .main-content{
@@ -269,21 +282,10 @@ body {margin: 0;font-family: 'Lato', sans-serif;overflow-x: hidden;color: #161a2
     transition: all .6s ease;
 }
 
-section{
-    padding: 30px 0;
-    background-color: #fff;
-}
+
 
 section:nth-child(even){
   background-image: url(../img/concrete_seamless.png);
-}
-
-section h2{
-    text-align: center;
-    font-size: 2em;
-    position: relative;
-    padding-bottom: 20px;
-    font-weight: 300;
 }
 
 section > h2:after{
@@ -386,11 +388,6 @@ section > h2:after{
   top: 40px;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-}
-
- footer{
-  height: 80px;
-  background: #161a21;
 }
 
 @keyframes zoom {
