@@ -5,11 +5,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-
   <div class="canvas"><div class="canvas-overlay"></div>
-    <div class="banner"></div>       
-       
-        <div class="mobile-menu">
+    <div class="banner"></div>   
+      <div class="mobile-menu">
             <div id="mouse-point">
                 <div class="menu-toggle"><div></div></div>
             </div>
@@ -19,8 +17,8 @@
                    <a href="#work">work</a>  
                    <a href="#contacts">contacts</a>     
              </div>
-        </div>
-        <div class="container"> 
+      </div>
+      <div class="container"> 
                 <div class="hero">
                     <h1>sofia <br><span>belchior</span>inho</h1>
                     <div>
@@ -30,17 +28,15 @@
                       <a id="medium" href="https://medium.com/@sofiafb" target="_blank"></a> 
                     </div>
                 </div>
-                <div class="nav fixed">
+                <div class="nav">
                    <a class="discover" href="#about">about</a>  
                    <a class="discover" href="#skills">skills</a>  
                    <a class="discover" href="#work">work</a>  
                    <a class="discover" href="#contacts">contacts</a>     
-             </div>
-        </div>
-
+                </div>
+      </div>
   </div>
-  
-    <div class="main-content">
+  <div class="main-content">
         <section id="about">
           <h2>about</h2>  
           <div class="container">
@@ -69,7 +65,7 @@
                 <div class="card-body"><span>docs & specs</span></div>
               </div>     
             </div>
-              <div class="container">
+            <div class="container">
               <div class="card">
                 <div class="card-image four"></div>
                 <div class="card-body"><span>development tools</span></div>
@@ -84,27 +80,26 @@
                 <div class="card-body">I developed a checklist that I always follow, which contains the basic requirements of good website or web app, such as optimizing assets, granting cross-browser and device compatibility, accessibility and so on</div>
               </div>                
             </div>
-           </section></div>
-        
+        </section>       
         <section id="work">
            <h2>work</h2>
            <div class="container">
                
-            </div>
-           
+            </div>           
        </section>  
         <section id="contacts">
            <h2>contacts</h2>
            <div class="container">
                
-            </div>
-           
+            </div>           
        </section>   
-    
-    <div class=""></div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script>
+  </div> 
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+
+
+        var num = $('div.nav').offset().top;
         $(window).bind('scroll', function () {
             if ($(window).scrollTop() > num) {
                $('div.nav').addClass('fixed');
@@ -124,7 +119,6 @@
         }
        });
 
-        var num = $('div.nav').offset().top;
        $('.canvas').on('click', 'a.discover' , function(){
          $(this).siblings().removeClass('active');
          $('html, body').animate({
@@ -145,8 +139,6 @@
           $('.me .about-me p.more').css('height', '165px');
        });
     </script>
-
-<footer></footer>
 </body>
 <footer></footer>
 </html>
