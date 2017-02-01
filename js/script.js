@@ -36,6 +36,7 @@ var scrollHandler = function () {
     }, 1200, 'swing');
     setTimeout(function(){
       $('.mobile-menu').removeClass('open'); 
+      $('div.menu-toggle').removeClass('menu-toggle--active');
     }, 1300);
  });
 
