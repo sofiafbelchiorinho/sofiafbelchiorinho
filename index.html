@@ -96,51 +96,8 @@
             </div>           
        </section>   
   </div> 
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script>
-
-
-        var num = $('div.nav').offset().top;
-        $(window).bind('scroll', function () {
-            if ($(window).scrollTop() > num) {
-               $('div.nav').addClass('fixed');
-               //$(window).unbind('scroll');
-            } else {
-               $('div.nav').removeClass('fixed');
-            }
-        });
-
-       $('.canvas').on('click', 'div.menu-toggle', function(){
-         if(!$(this).hasClass('menu-toggle--active')){
-            $('.mobile-menu').addClass('open');
-            $(this).addClass('menu-toggle--active');
-        }else{
-            $('.mobile-menu').removeClass('open');
-            $(this).removeClass('menu-toggle--active');
-        }
-       });
-
-       $('.canvas').on('click', 'a.discover' , function(){
-         $(this).siblings().removeClass('active');
-         $('html, body').animate({
-            scrollTop: $($(this)[0].hash).offset().top - 75
-          }, 1200, 'swing');
-         $(this).addClass('active');
-       });
-
-       $('.canvas').on('click', '.mobile-nav a' , function(){
-         $('html, body').animate({
-            scrollTop: $($(this)[0].hash).offset().top 
-          }, 1200, 'swing');
-       });
-
-       $('.about-me').on('click', 'a.read-more', function(e){
-          e.preventDefault();
-          $('.me .about-me p.more').css('opacity', '1');
-          $('.me .about-me p.more').css('height', '165px');
-       });
-    </script>
+  <script src="./js/script.js"></script>
 </body>
 <footer><span>sofia belchiorinho | © 2017 </span></footer>
 </html>
