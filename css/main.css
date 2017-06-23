@@ -193,7 +193,7 @@ footer span{
 }
 
 .hero h1{
-    margin: 25px 0;
+    margin: 0;
     padding-bottom: 15px;   
 }
 
@@ -539,15 +539,16 @@ a.email:after{
     }
 
     .hero{
-        padding: 0;
-        padding-left: 20px;
-        width: 70%;
-        text-align: left;
+      padding: 0;
+      padding-left: 20px;
+      width: 70%;
+      text-align: left;
     }
 
     .hero h1{
-       font-size: 3.5em;
-        border-bottom: 1px solid rgba(204, 204, 204, 0.41);
+      font-size: 3.5em;
+      margin: 25px 0;
+      border-bottom: 1px solid rgba(204, 204, 204, 0.41);
     }
 
     .hero a#email,
