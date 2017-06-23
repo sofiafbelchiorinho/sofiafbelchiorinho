@@ -26,8 +26,11 @@ var scrollHandler = function () {
    $(window).off('scroll');    
    $('html, body').stop(true).animate({
       scrollTop: $($(this)[0].hash).offset().top - 75
-    }, 1200, 'swing');  
-    $(window).on('scroll', scrollHandler);
+    }, 1200, 'swing', function(){
+        $('div.nav').addClass('fixed');
+      $(window).on('scroll', scrollHandler);
+    });  
+    
  });
 
  $('.canvas').on('click', '.mobile-nav a' , function(){

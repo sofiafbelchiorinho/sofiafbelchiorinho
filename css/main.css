@@ -7,7 +7,7 @@ body {
   font-family: 'Lato', sans-serif;
   overflow-x: hidden;
   font-size: 20px;
-  color: #161a21;
+  color: #17191c;
 }
 
 h1{
@@ -46,7 +46,7 @@ section{
 
 footer{
   height: 80px;
-  background: #161a21;
+  background: #17191c;
   color: #e2e1e1;
   font-size: 14px;
   position: relative;
@@ -69,7 +69,7 @@ footer span{
     bottom: 0;
     right: 0;
     left: 0;
-    background-image: url(../img/landscape.jpeg);
+    background-image: url(../img/fuji_san.jpg);
     background-size: cover;   
     z-index:  -1;
 }
@@ -108,7 +108,7 @@ footer span{
     transform: translateX(-50%);
     height: 77px;
     padding-bottom: 0;
-    background: #161a21;
+    background: #17191c;
     z-index: 2;
     background-position-y: 100%;
     border: none;
@@ -121,7 +121,7 @@ footer span{
     width: 100%;
     left: -100%;
     position: absolute;
-    background: #161a21;
+    background: #17191c;
     top: -1px;
 }
 
@@ -194,8 +194,7 @@ footer span{
 
 .hero h1{
     margin: 25px 0;
-    padding-bottom: 15px;
-    border-bottom: 1px solid rgba(204, 204, 204, 0.41);
+    padding-bottom: 15px;   
 }
 
 .hero a{
@@ -258,14 +257,32 @@ footer span{
 }
 
 .me{
-  padding:  0 20px;
+  padding:  0 10px;
   text-align: center; 
+  display: flex;
+  margin-top: 40px;
 }
 
 .me .about-me{
   text-align: center;
-  padding:  20px 0;
   line-height: 1.6em;
+  margin: 0 10px;
+  width: 50%;
+  text-align: left;
+  font-size: 0.9em;
+}
+
+.me .about-me:first-child{
+  background-image: url(../img/me_bw_2.jpg);
+  background-position-x: 70%;
+  transition: 1s all ease-out;
+  width: 50%;
+  max-height: 940px;
+}
+
+.me .about-me:first-child:hover{
+  background-image: url(../img/me_2.jpg);
+  transition: 1s all ease-out;
 }
 
 .me .about-me p.more{
@@ -280,7 +297,7 @@ footer span{
   text-decoration: none;
   text-transform: uppercase;  
   padding: 5px 20px;
-  border: 2px solid #161a21;
+  border: 2px solid #17191c;
 }
 
 .me img#me{
@@ -381,7 +398,7 @@ section > h2:after{
 .mobile-menu.open{
     height: 100%;
     width: 100%;
-    background: #161a21;
+    background: #17191c;
     z-index: 3;
 }
 
@@ -406,6 +423,66 @@ section > h2:after{
   top: 40px;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+
+#work span {
+    background: #17191c;
+    border: 1px solid #17191c;
+    color: #fff;
+    padding: 5px 10px;
+    margin-right: 5px;
+    margin-bottom: 8px;
+    display: inline-block;
+    font-size: 12px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+#work span:hover {
+    color: #17191c;
+    background: #fff;
+    border: 1px solid #17191c;
+}
+
+#work span:before{
+  content: "\f02b";
+  margin-right: 8px;
+  font-family: FontAwesome;
+}
+
+#work #tech{
+    padding: 0 5%;
+    text-align: center;
+}
+
+#contacts a{
+  color: #17191c;
+  font-size: 2em;
+  margin: 0 10px;
+}
+
+#contacts div{
+  text-align: center;
+}
+
+a.email:after{
+  font-family: FontAwesome;
+  content:  "\f003";
+}
+
+#contacts a.medium:after{
+  font-family: FontAwesome;
+  content: "\f23a";
+}
+
+#contacts a.linkedin:after{
+  font-family: FontAwesome;
+  content:  "\f08c";
+}
+
+#contacts p{
+  text-align: center;
+  margin: 0 auto;
 }
 
 @keyframes zoom {
@@ -442,6 +519,16 @@ section > h2:after{
         width: 750px;
     }
 
+    .me .about-me{
+      font-size: 1em;
+    }
+
+    .me .about-me:first-child{
+      background-position-y: -96px;
+      width: 40%;
+      height: 300px;
+    }
+
     .me .about-me p.more{
       height: auto;
       opacity: 1;
@@ -460,6 +547,7 @@ section > h2:after{
 
     .hero h1{
        font-size: 3.5em;
+        border-bottom: 1px solid rgba(204, 204, 204, 0.41);
     }
 
     .hero a#email,
@@ -493,7 +581,15 @@ section > h2:after{
 
     .card .card-body span{
       font-size: 16px;
-      }
+    }
+
+    #work #tech{
+        padding: 0 25%;
+    }   
+
+    #work span:before{
+      display: none;
+    }
 
     footer{
       height: 50px;
