@@ -267,7 +267,7 @@ footer span{
   text-align: center;
   line-height: 1.6em;
   margin: 0 10px;
-  width: 50%;
+  width: 65%;
   text-align: left;
   font-size: 0.9em;
 }
@@ -276,7 +276,7 @@ footer span{
   background-image: url(../img/me_bw_2.jpg);
   background-position-x: 70%;
   transition: 1s all ease-out;
-  width: 65%;
+  width: 50%;
   max-height: 940px;
 }
 
